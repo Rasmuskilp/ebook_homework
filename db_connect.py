@@ -62,6 +62,7 @@ class MSDBConnection():
         query3 = f" UPDATE ebooks SET longitude = {from_long}, latitude = {from_lat} WHERE title = '{self.title_in()}' "
         #item = self.__sql_query(query)
         item3 = self.__sql_query(query3)
+
         query2 = 'SELECT * FROM ebooks'
         item2 = self.__sql_query(query2)
         return item2.fetchall()

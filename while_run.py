@@ -12,8 +12,10 @@ while True:
         # MSDBConnection().author_in()
         # MSDBConnection().release_in()
         new_ebook.insert_to()
+        new_ebook.docker_Northwind.commit()
     elif number == '2':
         new_ebook.ins_long_lat()
+        new_ebook.docker_Northwind.commit()
     elif number == '3':
         print( new_ebook.select_from())
     else:
